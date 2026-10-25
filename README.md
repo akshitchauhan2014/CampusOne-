@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="campusone/assets/campusone_icon.png" alt="CampusOne graduation-cap logo" width="240" />
+
   # CampusOne
 
   **A focused desktop workspace for student records and academic operations.**
@@ -88,6 +91,17 @@ python run.py
 ```
 
 On first launch, CampusOne initializes its database and guides the administrator through account setup. **The recovery key is displayed only once, so store it securely.**
+
+### Package a desktop build
+
+Install the development and packaging dependencies, then build on the operating system you want to package for (PyInstaller does not cross-compile):
+
+```powershell
+pip install -r requirements-dev.txt
+pyinstaller --clean --noconfirm CampusOne.spec
+```
+
+On Windows, the runnable application is `dist\CampusOne\CampusOne.exe`; distribute the entire `dist\CampusOne` folder, not just the executable. The packaged app stores its database and logs under `%LOCALAPPDATA%\CampusOne\data` by default. Set `CAMPUSONE_DB_PATH` to override the database location.
 
 ## Typical workflow
 

@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/
+backups/
+logs/
+models/
+# Local exports and imports may contain student personal data.
+*.xlsx
+*.xls
+*.csv
+*.sqlite
+*.db
+campusone_complete.sql

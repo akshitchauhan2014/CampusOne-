@@ -1,6 +1,3 @@
-<div align="center">
-  <img src="CampusOne-Logo.png" alt="CampusOne — graduation cap and C1 logo" width="240" />
-
   # CampusOne
 
   **A focused desktop workspace for student records and academic operations.**
